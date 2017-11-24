@@ -1,0 +1,158 @@
+/* 
+		 *********************************
+		**Site criado por Julio Lira(Kefa)**
+		**https://github.com/Jul10l1r4    **
+		**Facebook.com/julio.lira.555     **
+		**Jul10l1r4@gmail.com             **
+     **********************************
+*/
+@media (min-width:400px){
+  /*use 5em para ser distancia para de cada sessao*/
+  body{
+    width: 100%;
+    background: black;
+    margin-left:0px;/* Tirando todas as margens que atrapalham pra tomar uma div completa */
+    margin-top:0px;
+    margin-right:0px;
+  	margin-bottom:0;
+    font-family:"Lato", sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+    color:#777777;
+    font-weight: lighter;
+  }
+  a{
+    color:#777777;
+    text-decoration: none;
+  }
+  #nav-bar{/* Pra preencher não precisa de ser position absolute */
+    background: #fff;
+    left:0px;
+    right: 0px;
+    display: contents;
+    position:fixed;
+    color:#777777;
+    z-index:999;
+  }
+  #nav-bar>a{/* Pra ajeitar os links do nav-bar, organizalos e alinha-los */
+    padding-right: 25px;
+    font-size:15px;
+    text-decoration:none;
+    font-family: sans-serif;
+    padding:11px 22px;
+    display: inline-block;
+    transition-duration: 0.1s;
+
+  }
+  #nav-bar>a:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+    transition-duration: 0.1s;
+    color:#000;
+  }
+  #face{
+    background-image:url("../bg5.jpg");
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    display: block;
+    position: relative;
+    left:0;
+    right:0;
+    min-height:50em;
+  }
+  #face>span{
+    padding:13px 26px;
+    background:rgba(23,23,23,0.8);
+    letter-spacing: 10px
+  }
+
+  div#about{
+    position: relative;
+    margin-top:0;
+    display: block;
+    padding: 5em 16px;
+    max-width: 980px;
+    margin: auto;
+    text-align: justify;
+    z-index:1;
+  }
+  div#portifolio{
+    padding-top:0px;
+    position: relative;
+    display: block;
+    max-width: 980px;
+    margin: 300px auto 0px auto;
+    z-index:0;
+  }
+  #portifolio::after, #portifolio::before{
+    content: "";
+    display: inline;
+    clear: both;
+    box-sizing: inherit;
+  }
+
+  section#map{
+    position:relative;
+  	border-top:50px transparent solid;
+    width:100%;
+    height:38em;
+    margin-bottom:0px;
+  }
+
+  div#contato{
+    position: relative;
+    padding-top:100px;
+    display:block;
+    text-align:center;
+    height:15em;
+    max-width: 980px;
+    margin: 0px auto;
+    margin-top:0;
+    margin-bottom: 50px;
+  }
+  form#formi{
+    position: relative;
+    margin-bottom: 0;
+  }
+  .right{
+    width:50%;
+    position:absolute;
+    right:0;
+    text-align:center;
+    margin-bottom:0;
+  }
+  .left{
+    width:50%;
+    position:absolute;
+    left:0;
+    text-align:justify;
+  }
+  form#formi>input{
+    border:1px #888 solid;
+    border-radius: 0;
+    background:white;
+    height:30px;
+    margin-bottom:10px;
+  }
+
+  footer#rp{
+    padding-top:30px;
+    width:100%;
+    height:117px;
+    display: block;
+    position: relative;
+    background:black;
+    color:white;
+  }
+  div.linha{
+  	position:relative;
+  	float:auto;
+    margin-top:-20px;
+    display:inline-block;
+  }
+  #ladinho{
+  	height:74px;
+  	display:inline;
+  	margin-top:-70px;
+  }
+}
