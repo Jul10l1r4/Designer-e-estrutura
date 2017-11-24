@@ -1,0 +1,195 @@
+<!-- 
+		 *********************************
+		**Site criado por Julio Lira(Kefa)**
+		**https://github.com/Jul10l1r4    **
+		**Facebook.com/julio.lira.555     **
+		**Jul10l1r4@gmail.com             **
+     **********************************
+-->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Escola de costura</title>
+		<!-- link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" -->
+    <link rel="shortcut icon" type="image/png" href="Logo - Preto.png"/>
+    <link type="text/css" rel="stylesheet" href="style/font.css"/>
+    <script src="js/vendor.js"></script>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link type="text/css" rel="stylesheet" href="style/animations.css"/>
+    <link type="text/css" rel="stylesheet" href="style/general.css"/>
+    <link type="text/css" rel="stylesheet" href="style/album.css"/>
+    <script>
+      jQuery(document).ready(function($){
+        $(".nav-bar").click(function(event){
+          event.preventDefault();
+
+          $("html,body").animate({scrollTop:$(this.hash).offset().top},500);
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <!-- Modal for full size images on click-->
+    <div id="bloco" onclick="this.style.display = 'none';" style="display: none;">
+      <div class="central">
+        <em style="color:#aaa">Aperte em qualquer lugar para diminuir a imagem</em><br/>
+        <img id="default" src="./W3.CSS Template_files/p6.JPG"/>
+        <p id="caption">Chai</p>
+      </div>
+    </div>
+
+    <div id="nav-bar">
+      <a id="a" class="nav-bar" href="#face">INICIO</a>
+      <a id="b" class="nav-bar" href="#about">SOBRE</a>
+      <a id="c" class="nav-bar" href="#pt">PORTIFÓLIO</a>
+      <a id="d" class="nav-bar" href="#map">VISITE-ME</a>
+      <a id="e" class="nav-bar" href="#contato">FALE CONOSCO</a>
+
+    </div>
+		<div id="semid">
+			<img src="lp.png" title="Logo" style="margin-top:7px;"/>
+			<span id="lmenu" onclick="exibir()" title="Abrir menu"><img src="menu.png" height="60px"/></span>
+		</div>
+      <menu id="menu"><br/>
+          <a id="a" class="nav-bar" href="#face">INICIO</a><br/>
+          <a id="b" class="nav-bar" href="#about">SOBRE</a><br/>
+          <a id="c" class="nav-bar" href="#pt">PORTIFÓLIO</a><br/>
+          <a id="d" class="nav-bar" href="#map">VISITE-ME</a><br/>
+          <a id="e" class="nav-bar" href="#contato">FALE CONOSCO</a>
+      </menu>
+			<script>
+			function exibir(){
+				const b = document.getElementById("lmenu");
+				const c = document.getElementById("menu");
+				const v = document.getElementById("lmenu").title;
+				if(v == "Abrir menu"){
+					c.style = "display:table-caption";
+					b.innerHTML = "///";
+					document.getElementById("lmenu").title = "Fechar menu";
+				}else{
+					c.style = "display:none";
+ 				  document.getElementById("lmenu").title = "Abrir menu";	
+					b.innerHTML = "<img src='menu.png' height='80px'/>";
+				}
+
+			}
+		</script>
+    <!-- Fim do nav-bar e inicio da primeira seção -->
+
+    <div id="face">
+      <span style="position: absolute;top: 45%;left: 50%;transform: translate(-50%,-50%);color:white;font-size:25px;animation-name:opacity;animation-duration:1.5s;text-align:center;">APRENDA A COSTURAR</span>
+    </div>
+
+    <div id="about" style="animation-name:opacity;animation-duration:3.5s;">
+      <h3 style="text-align:center;">COMO FUNCIONA?</h3>
+      <p style="font-size:17px;">
+        Olá, o curso é cedido em duas modalidades que é a <em>opc.</em>(operacional) podendo concluir em dois mezes no período de ambos
+        os cursos conhecemos as máquinas e suas estruturas, e profissional em corte e costura que conhecemos. Tendo o seu preço ja flexível ideal pra
+        você, pensando nisso somos uma das poucas empresas de curso de costura e nesse caminho ja formamos vários profissionais de ambos os sexos
+        e de todas as classes. E nisso já são 20 anos de história.
+      </p>
+      <div id="left">
+        <p style="font-weight:bold;text-align:center;padding:0px 24px;">Sandra Menezes</p>
+        <img src="sandra.JPG" style="width:100%;height:60%;padding-top:5px;">
+      </div>
+
+      <div id="right">
+				A nossa empresa surgiu de um grande desejo em ensinar e profissionalizar leigos no ramo da costura, e desde todo
+				esse tempo fazemos o nosso cafézinho que nos faz a um conhecer o outro e assim convivemos em uma grande harmonia.
+				O curso é com um método unico de ensino o que nos torna singular, Eu nascí em Aurora-CE e à 20 anos ja se havia
+				entronizado no ramo da costura, e ao notar a dificuldade de muitos costureiros em entrar em e conseguir produzir em qualquer empresa.
+				Pensando nisso Eu criei essa empresa que em pouco tempo trabalhou por 2 anos para o governo e agora tem acesso direto a encaminhamento
+				da Guararapes, e isso me deixa bastante feliz.
+      </div>
+    </div>
+
+    <div id="portifolio">
+      <span id="pt"></span>
+      <h3 style="text-align:center; margin-top:75px;">Album</h3>
+
+    <div class="gp">
+        <div class="bc">
+          <img src="DSC_0245.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Conhecimento mecanico da maquina">
+        </div>
+
+      <div class="bc">
+        <img src="a15.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Aulas precisas de corte">
+      </div>
+
+      <div class="bc">
+        <img src="a14.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Aulas teoricas, e comportamentais">
+      </div>
+
+      <div class="bc">
+        <img src="a4.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Monitoramento e dicas">
+      </div>
+      <div class="bc">
+        <img src="a9.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Aulas de corte na prática">
+      </div>
+
+    <div class="bc">
+      <img src="a10.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Auxilio presencial">
+    </div>
+
+    <div class="bc">
+      <img src="a7.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="De linha a roupa">
+    </div>
+
+    <div class="bc">
+      <img src="a8.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Pratica e foco">
+    </div>
+  </div>
+</div>
+
+<section id="map" style="padding-top:50px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.4393229075657!2d-35.24533251193191!3d-5.748040365376533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa38f717a2bd%3A0xc37f23359d35adf2!2sR.+Itoror%C3%B3s%2C+47+-+Potengi%2C+Natal+-+RN!5e0!3m2!1spt-BR!2sbr!4v1505408333476" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+	<div id="contato">
+    <div class="right">
+      <h2 style="margin-top:0;">Fale comigo :)</h2>
+  		<form action="#" name="email" id="formi" method="POST">
+        <input type="name" name="nome" placeholder="Escreva teu nome" size="30"/><br/>
+        <input type="text" name="bufi" placeholder="Escreva tua mensagem para mim" size="30"/><br/>
+        <input type="submit" value="Enviar"/>
+      <form/>
+    </div>
+    <div class="left">
+      <h2 style="margin-top:0;">Qual e a missão da Escola de costura?</h2>
+
+      É dar cada vez mais o conhecimento em costura profissional e
+      operacional para melhorar condições de cada aluno se encaixar
+      no mundo da moda.
+    </div>
+	</div>
+
+
+  <footer id="rp" style="display:block;text-align:center;">
+	
+    <img src="bka.png" style="display:inline;height:60px;"/>
+    <div class="linha">
+
+			<br/>
+			<img src="wp-t.png" width="20px" style="margin-bottom:-3px;"/> +55 084 987150994<br/>
+			<br/>
+
+    </div>
+		<span style="display:block;">Esse site foi desenvolvido por Julio Lira(Kefa)<span>
+  </footer>
+    <script src="js/paralax.js">
+    </script>
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("default").src = element.src;
+      document.getElementById("bloco").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+
+  </body>
+</html>
