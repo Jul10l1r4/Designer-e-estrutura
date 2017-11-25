@@ -64,7 +64,7 @@ span#lmenu{
 		display:none;
 	}
 #face{
-  background-image:url("../bg5.jpg");
+  background-image:url("bg5.jpg");
   background-position:center;
   background-size:cover;
   background-attachment: fixed;
