@@ -1,24 +1,25 @@
 <!-- 
 		 *********************************
 		**Site criado por Julio Lira(Kefa)**
+		**Designer baseado em modelos w3c **
 		**https://github.com/Jul10l1r4    **
 		**Facebook.com/julio.lira.555     **
-		**Jul10l1r4@gmail.com             **
-     **********************************
+		**Email:Jul10l1r4@gmail.com       **
+	     	**********************************
 -->
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8"/>
     <title>Escola de costura</title>
-<!-- link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" -->
+		<!-- link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" -->
     <link rel="shortcut icon" type="image/png" href="Logo - Preto.png"/>
     <link type="text/css" rel="stylesheet" href="style/font.css"/>
     <script src="js/vendor.js"></script>
 		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link type="text/css" rel="stylesheet" href="style/animations.css"/>
-    <link type="text/css" rel="stylesheet" href="general.css"/>
-    <link type="text/css" rel="stylesheet" href="album.css"/>
+    <link type="text/css" rel="stylesheet" href="style/general.css"/>
+    <link type="text/css" rel="stylesheet" href="style/album.css"/>
     <script>
       jQuery(document).ready(function($){
         $(".nav-bar").click(function(event){
@@ -51,7 +52,7 @@
     </div>
 		<div id="semid">
 			<img src="lp.png" title="Logo" style="margin-top:7px;"/>
-			<span id="lmenu" onclick="exibir()" title="Abrir menu"><img src="menu.png" height="60px"/></span>
+			<span id="lmenu" onclick="exibir()" title="Abrir menu"><img src="men.png" height="60px"/></span>
 		</div>
       <menu id="menu"><br/>
           <a id="a" class="nav-bar" href="#face">INICIO</a><br/>
@@ -67,12 +68,12 @@
 				const v = document.getElementById("lmenu").title;
 				if(v == "Abrir menu"){
 					c.style = "display:table-caption";
-					b.innerHTML = "///";
+					b.innerHTML = "<span style='font-size:60px;line-height: 1.2;margin-right:4px;'>x<span>";
 					document.getElementById("lmenu").title = "Fechar menu";
 				}else{
 					c.style = "display:none";
  				  document.getElementById("lmenu").title = "Abrir menu";	
-					b.innerHTML = "<img src='menu.png' height='80px'/>";
+					b.innerHTML = "<img src='men.png' height='60px'/>";
 				}
 
 			}
@@ -86,7 +87,7 @@
     <div id="about" style="animation-name:opacity;animation-duration:3.5s;">
       <h3 style="text-align:center;">COMO FUNCIONA?</h3>
       <p style="font-size:17px;">
-        Olá, o curso é cedido em duas modalidades que é a <em>opc.</em>(operacional) podendo concluir em dois mezes no período de ambos
+        Olá, o curso é cedido em duas modalidades que é a opc. (operacional) podendo concluir em dois mezes no período de ambos
         os cursos conhecemos as máquinas e suas estruturas, e profissional em corte e costura que conhecemos. Tendo o seu preço ja flexível ideal pra
         você, pensando nisso somos uma das poucas empresas de curso de costura e nesse caminho ja formamos vários profissionais de ambos os sexos
         e de todas as classes. E nisso já são 20 anos de história.
@@ -124,7 +125,7 @@
       </div>
 
       <div class="bc">
-        <img src="a4.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Monitoramento e dicas">
+        <img src="moni.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Monitoramento e dicas">
       </div>
       <div class="bc">
         <img src="a9.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Aulas de corte na prática">
@@ -140,6 +141,9 @@
 
     <div class="bc">
       <img src="a8.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Pratica e foco">
+    </div>
+		<div class="bc">
+      <img src="a17.JPG" style="width:100%" onclick="onClick(this)" class="icons" alt="Resultado e perfeição">
     </div>
   </div>
 </div>
