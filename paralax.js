@@ -6,13 +6,13 @@
 		**Jul10l1r4@gmail.com             **
      **********************************
 */
-function alerte(){
-  const dis = document.getElementById("nav-bar");//  id nav-bar
-  const das = document.getElementById("a");// repetindo vários códigos
-  const das1 = document.getElementById("b");
-  const das2 = document.getElementById("c");
-  const das3 = document.getElementById("d");
-  const das4 = document.getElementById("e");
+const alerte = () => {
+  let dis = document.getElementById("nav-bar");//  id nav-bar
+   das = document.getElementById("a");// repetindo vários códigos
+   das1 = document.getElementById("b");
+   das2 = document.getElementById("c");
+   das3 = document.getElementById("d");
+   das4 = document.getElementById("e");
 
   if(window.pageYOffset > 100){
     dis.style = "box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);display:block";
@@ -30,5 +30,6 @@ function alerte(){
     das3.style = "color:#777777;transition-duration:0.5s";
     das4.style = "color:#777777;transition-duration:0.5s";
   }
+
 }
 window.addEventListener("scroll",alerte);
