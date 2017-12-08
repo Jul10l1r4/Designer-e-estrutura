@@ -187,7 +187,7 @@
     // Modal Image Gallery
     const onClick = (element) => {
       document.getElementById ( 'default' ).src = element.src;
-      getElementById ( 'bloco' ).style.display = 'block';
+      document.getElementById ( 'bloco' ).style.display = 'block';
       let captionText = document.getElementById( 'caption' );
       captionText.innerHTML = element.alt;
     }
