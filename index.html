@@ -185,10 +185,10 @@
     </script>
     <script>
     // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("default").src = element.src;
-      document.getElementById("bloco").style.display = "block";
-      var captionText = document.getElementById("caption");
+    const onClick = (element) => {
+      document.getElementById ( 'default' ).src = element.src;
+      getElementById ( 'bloco' ).style.display = 'block';
+      let captionText = document.getElementById( 'caption' );
       captionText.innerHTML = element.alt;
     }
     </script>
