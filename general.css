@@ -84,7 +84,6 @@ div#about{
   position: relative;
   margin-top:0;
   display: block;
-  padding: 5em 16px;
   max-width: 980px;
   margin: auto;
   text-align: justify;
@@ -137,7 +136,7 @@ div#contato{
 }
 form#formi{
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 .right{
   width:50%;
@@ -152,14 +151,24 @@ form#formi{
   left:0;
   text-align:justify;
 }
-form#formi>input{
+form#formi>input, form#formi>textarea{
   border:1px #888 solid;
   border-radius: 0;
   background:white;
   height:30px;
   margin-bottom:10px;
 }
-
+form#formi>input[type="submit"]{
+	color:#fff;
+	background-color:#000;
+	border:none;
+}
+form#formi>input[type="submit"]:hover{
+	transition-duration:0.4s;
+	background-color:#fff;
+	color:#000;
+	border:1px #000 solid;
+}
 footer#rp{
   padding-top:30px;
   width:100%;
@@ -247,7 +256,7 @@ div.linha{
     position: relative;
     margin-top:0;
     display: block;
-    padding: 5em 16px;
+		padding: 0 2em;
     max-width: 980px;
     margin: auto;
     text-align: justify;
@@ -279,6 +288,9 @@ div.linha{
     text-align:center;
     margin-top:41px;
   }
+	.right>h2{
+		font-size:15px;
+	}
   .left{
     width:100%;
     position:absolute;
@@ -291,6 +303,9 @@ div.linha{
 	.right{
     margin-top:83px;
   }
+	.right>h2{
+		font-size:15px;
+	}
 	.left{
 		margin-top:-105px;
   }
